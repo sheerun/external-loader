@@ -7,12 +7,10 @@
 ``` javascript
 var url = require("external-loader!./file.json");
 // => emits a require to ./file.json on filesystem, and adds it to external resources
-// => returns i. e. `require("/project/path/file.json")`
+// => returns `require("/project/path/file.json")`
 ```
 
-You can also pass `copy=1` parameter to copy resource to public directory first.
-
-The filename of copied resource can be modified with `name` param, just as in file-loader.
+If `name` param is provided, resouce is copied to public directory, just like file-loader.
 
 You can specify module system explicitly by setting `libraryTarget` param.
 
