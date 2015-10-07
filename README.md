@@ -46,7 +46,7 @@ require("external-loader?name=js/[hash].script.[ext]!./javascript.js");
 require("external-loader?name=js/[hash].script.[ext]&publicPath=./foobar!./javascript.js");
 // => require("./foobar/0dcbbaa701328a3c262cfd45869e351f.script.js")
 
-require("file?name=html-[hash:6].html!./javascript.js");
+require("external-loader!./javascript.js");
 // => require("/path/to/project/javascript.js");
 ```
 
