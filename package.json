@@ -4,7 +4,7 @@
   "author": {
     "name": "Adam Stankiewicz <sheerun@sher.pl>"
   },
-  "description": "Transforms file paths to requires of external modules",
+  "description": "Webpack loader for requiring external files instead of building them",
   "files": [
     "index.js"
   ],
