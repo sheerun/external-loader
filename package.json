@@ -1,0 +1,34 @@
+{
+  "name": "external-loader",
+  "version": "0.1.0",
+  "author": {
+    "name": "Adam Stankiewicz <sheerun@sher.pl>"
+  },
+  "description": "Transforms file paths to requires of external modules",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "loader-utils": "~0.2.5"
+  },
+  "devDependencies": {
+    "should": "~4.0.4",
+    "mocha": "~1.21.3"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheerun/external-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sheerun/external-loader/issues"
+  },
+  "homepage": "https://github.com/sheerun/external-loader",
+  "main": "index.js",
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  }
+}
