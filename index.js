@@ -38,7 +38,6 @@ module.exports = function(content) {
 
 	var sourceAndMap = externalModule.source().sourceAndMap();
 
-	console.log(sourceAndMap);
 	return sourceAndMap.source;
 }
 
