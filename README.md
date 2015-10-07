@@ -10,32 +10,11 @@ var url = require("external-loader!./file.json");
 // => returns `require("/project/path/file.json")`
 ```
 
-If `name` param is provided, resouce is copied to public directory, just like file-loader.
+If `name` param is provided, resource is copied to public directory, just like [file-loader](https://github.com/webpack/file-loader).
 
 You can specify module system explicitly by setting `libraryTarget` param.
 
 You can override publicPath by setting `publicPath` param.
-
-## Filename templates
-
-If running with `copy=1` parameter, external resource is copied to the public directory.
-
-You can configure a custom filename template for your file using the query
-parameter `name`. For instance, to copy a file from your `context` directory
-into the output directory retaining the full directory structure, you might
-use `?name=[path][name].[ext]`.
-
-### Filename template placeholders
-
-* `[ext]` the extension of the resource
-* `[name]` the basename of the resource
-* `[path]` the path of the resource relative to the `context` query parameter or option.
-* `[hash]` the hash or the content
-* `[<hashType>:hash:<digestType>:<length>]` optionally you can configure
-  * other `hashType`s, i. e. `sha1`, `md5`, `sha256`, `sha512`
-  * other `digestType`s, i. e. `hex`, `base26`, `base32`, `base36`, `base49`, `base52`, `base58`, `base62`, `base64`
-  * and `length` the length in chars
-* `[N]` the N-th match obtained from matching the current file name against the query param `regExp`
 
 ## Examples
 
